@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>Apple (Brasil)</title>
+        <link rel="shortcut icon" href="Assents/iconeapple.png" type="image/x-icon">
+</head>
+<body>
+<header>
+<nav class="navigation">    
+      <a href=""><img src="Assents/logoappleblack.png"  alt="logo do iphone" class="logo"></a>
+    <ul>
+        <li><a href="#">Loja</a></li>
+        <li><a href="#">Mac</a></li>
+        <li><a href="#">Ipad</a></li>
+        <li><a href="#">Iphone</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#">AirPods</a></li>
+        <li><a href="#">Tv e Casa</a></li>
+        <li><a href="#">Entretenimento</a></li>
+        <li><a href="#">Acessórios</a></li>
+        <li><a href="#">Suporte</a></li>
+        <img href="#" class="pesquisa" src="Assents/pesquisa.png" alt="pesquisa">
+        <img href="#" class="sacola" src="Assents/shopping-bag_icon-icons.com_69305.png" alt="sacola">
+    </ul>
+</nav>
+</header>
+<main>
+<section class="section">
+    <div class="circule"></div>
+   <div class="main-text">  
+        <img src="Assents/iphone15.png" alt="">
+    <h3>Forte desejo de impressionar</h3>
+    <p>Com o chip A16 Bionic com velocidade impressionante e o design inovador com vidro inteiramente colorido por infusão na parte de trás.
+        Fotos de tirar o fôlego e arrancar sorrisos com a nova câmera grande-angular de 48 MP. Bateria para o dia todo e energia de sobra para tudo o que você quer fazer. Venha se surpreender com o novo Iphone 15</p>
+    <h6> A Partir de R$ 608,25/mês ou R$ 7.299</h6>
+        <a href="#" class="button">Comprar</a>
+<div class="text" >
+    <h5>Cor. Escolha sua favorita.</h5> 
+</div>
+<div class="content">
+    <span  id="green" onclick="imgSlider('Assents/iphonegreen15.png'); circulecharge('#384937')" ></span>
+    <span id="pink"onclick="imgSlider('Assents/iphonepink15.png'); circulecharge('#f8ddd6')"></span>
+    <span id="blue"onclick="imgSlider('Assents/iphoneblue15.png'); circulecharge('#225f7e')"></span>
+    <span id="black"onclick="imgSlider('Assents/iphoneblack15.png'); circulecharge('#282a2c')"></span>
+    <span id="yellow"onclick="imgSlider('Assents/iphoneyellow15.png'); circulecharge('#fef9e3')"></span>
+</div>
+ </div>
+<div class="main-img">
+   <img src="Assents/iphonegreen15.PNG" alt="imagem do iphone" id="phone">
+</div>
+</section>
+</main>
+<script type="text/javascript">
+function imgSlider(e){
+  document.querySelector('#phone').src = e;
+}
+function circulecharge (color) {
+    const circule = document.querySelector(".circule")
+    circule.style.background = color;
+}
+</script>
+
+</body>
+</html>
